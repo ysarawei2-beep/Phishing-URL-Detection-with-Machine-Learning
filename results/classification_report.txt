@@ -1,0 +1,6 @@
+              precision    recall  f1-score   support
+
+  Legitimate     0.9521    0.9546    0.9533       749
+  Phishing       0.9504    0.9477    0.9491       688
+
+    accuracy                         0.9513      1437

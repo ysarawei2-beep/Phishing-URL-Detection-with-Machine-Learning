@@ -1,0 +1,58 @@
+# =================================================================
+# Configuration for the Phishing URL Detection pipeline.
+# All magic numbers and paths are centralised here so the code itself
+# stays clean and reproducible.
+# =================================================================
+# Dataset used:
+#   "Phishing Dataset for Machine Learning: Feature Evaluation"
+#   by Shashwat Tiwari on Kaggle.
+#   https://www.kaggle.com/datasets/shashwatwork/phishing-dataset-for-machine-learning
+# =================================================================
+
+# --- Data paths (relative to the project root) --------------------
+paths:
+  raw_data:        "data/raw/Phishing_Legitimate_full.csv"
+  sample_data:     "data/sample/sample_phishing.csv"
+  processed_dir:   "data/processed"
+  models_dir:      "models_saved"
+  results_dir:     "results"
+
+# --- Raw-CSV column names ----------------------------------------
+columns:
+  # Columns that should be ignored (identifier, not a feature)
+  id_column:     "id"
+  # Target column: 1 = phishing, 0 = legitimate
+  label_column:  "CLASS_LABEL"
+
+# --- Train / validation / test split -----------------------------
+split:
+  test_size:       0.15   # 15 % test
+  val_size:        0.15   # 15 % validation (of remaining 85 %)
+  random_state:    42
+  stratify:        true
+
+# --- Feature engineering ----------------------------------------
+features:
+  # If true, add the three engineered ratio features defined in
+  # src/feature_engineering/url_features.py
+  add_engineered: true
+
+# --- Model hyper-parameters --------------------------------------
+# Single beginner-friendly model: Random Forest.
+model:
+  name:              "RandomForest"
+  n_estimators:      200
+  max_depth:         20
+  min_samples_split: 5
+  min_samples_leaf:  2
+  class_weight:      "balanced"
+  n_jobs:            -1
+  random_state:      42
+
+# --- Runtime options ---------------------------------------------
+runtime:
+  # Sub-sample the dataset for fast local iteration.
+  sample_for_dev:       false
+  dev_sample_size:      2000
+  cv_folds:             5
+  verbose:              true

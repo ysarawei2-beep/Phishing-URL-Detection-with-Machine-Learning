@@ -1,0 +1,32 @@
+====================================================================
+  Phishing URL Detection – Unit Test Run
+====================================================================
+
+[module] tests.test_features
+   PASS   TestEngineerFeatures::test_engineered_columns_added
+   PASS   TestEngineerFeatures::test_ratios_are_correct
+   PASS   TestExtractFeaturesDataframe::test_no_nulls
+   PASS   TestExtractFeaturesDataframe::test_shape_and_columns
+   PASS   TestExtractFeaturesFromUrl::test_at_symbol
+   PASS   TestExtractFeaturesFromUrl::test_empty_url_returns_zeroed_vector
+   PASS   TestExtractFeaturesFromUrl::test_https_flag
+   PASS   TestExtractFeaturesFromUrl::test_ip_detection
+   PASS   TestExtractFeaturesFromUrl::test_non_string_input
+   PASS   TestExtractFeaturesFromUrl::test_returns_all_expected_columns
+   PASS   TestExtractFeaturesFromUrl::test_sensitive_keywords
+   PASS   TestExtractFeaturesFromUrl::test_url_length_matches
+
+[module] tests.test_preprocessing
+   PASS   TestCleanDataframe::test_drops_duplicates
+   PASS   TestCleanDataframe::test_drops_nans
+   PASS   TestCleanDataframe::test_invalid_labels_raise
+   PASS   TestLoaderAndSplit::test_load_raw_dataset_returns_dataframe
+   PASS   TestLoaderAndSplit::test_split_preserves_label_balance
+   PASS   TestLoaderAndSplit::test_split_sizes_sum_to_total
+
+[module] tests.test_model
+   SKIP   (ImportError: No module named 'sklearn')
+
+--------------------------------------------------------------------
+Summary: 18/18 passed, 0 failed, 0 errors, 1 modules skipped (took 0.85s)
+--------------------------------------------------------------------

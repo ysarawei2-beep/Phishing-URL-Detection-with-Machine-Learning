@@ -1,0 +1,127 @@
+================================================================
+SOURCES USED – Phishing URL Detection Project
+================================================================
+This file lists every external source that informed the design,
+code, and documentation of this project.
+
+All URLs were last verified in April 2026.
+
+----------------------------------------------------------------
+1. DATASET
+----------------------------------------------------------------
+[D1] Shashwat Tiwari. "Phishing Dataset for Machine Learning:
+     Feature Evaluation." Kaggle, 2022.
+     URL: https://www.kaggle.com/datasets/shashwatwork/phishing-dataset-for-machine-learning
+     License: CC BY 4.0.
+
+[D2] Tan, Choon Lin. "Phishing Dataset for Machine Learning:
+     Feature Evaluation." Mendeley Data, V1, 2018.
+     DOI:  10.17632/h3cgnj8hft.1
+     (Original publication of the dataset that was later
+      mirrored on Kaggle as [D1].)
+
+----------------------------------------------------------------
+2. ACADEMIC PAPERS
+----------------------------------------------------------------
+[P1] Sahoo, D., Liu, C., & Hoi, S. C. H. (2017).
+     "Malicious URL Detection using Machine Learning: A Survey."
+     arXiv:1701.07179.
+     Used for the selection of lexical features and the list of
+     suspicious phishing keywords in
+     src/feature_engineering/url_features.py.
+
+[P2] Aleroud, A., & Zhou, L. (2017).
+     "Phishing Environments, Techniques, and Countermeasures: A
+      Survey." Computers & Security, 68, 160–196.
+     Motivated the list of URL-shortener services checked by the
+     feature extractor.
+
+[P3] Marchal, S., Saari, K., Singh, N., & Asokan, N. (2016).
+     "Know Your Phish: Novel Techniques for Detecting Phishing
+      Sites and their Targets." IEEE ICDCS.
+     Motivation for the "suspicious TLDs" list.
+
+[P4] Hannousse, A., & Yahiouche, S. (2021).
+     "Towards Benchmark Datasets for Machine Learning Based
+      Website Phishing Detection: An Experimental Study."
+     Engineering Applications of AI, 104, 104347.
+     Reference for choosing Random Forest as a strong baseline
+     on URL feature datasets.
+
+[P5] Verma, R., & Das, A. (2017).
+     "What's in a URL: Fast Feature Extraction and Malicious URL
+      Detection." Proc. IWSPA 2017.
+     Reference for lexical-feature engineering.
+
+----------------------------------------------------------------
+3. SOFTWARE & LIBRARIES
+----------------------------------------------------------------
+[S1] Pedregosa, F. et al. (2011).
+     "Scikit-learn: Machine Learning in Python."
+     Journal of Machine Learning Research, 12, 2825–2830.
+     URL: https://scikit-learn.org/
+
+[S2] McKinney, W. (2010).
+     "Data Structures for Statistical Computing in Python."
+     Proc. of the 9th Python in Science Conference.
+     URL: https://pandas.pydata.org/
+
+[S3] Harris, C. R. et al. (2020).
+     "Array programming with NumPy." Nature, 585, 357–362.
+     URL: https://numpy.org/
+
+[S4] Hunter, J. D. (2007).
+     "Matplotlib: A 2D Graphics Environment."
+     Computing in Science & Engineering, 9(3), 90–95.
+     URL: https://matplotlib.org/
+
+[S5] Waskom, M. L. (2021).
+     "Seaborn: Statistical Data Visualization."
+     Journal of Open Source Software, 6(60), 3021.
+     URL: https://seaborn.pydata.org/
+
+[S6] tldextract – Accurately separates a URL's subdomain, domain,
+     and public suffix. John Kurkowski.
+     URL: https://github.com/john-kurkowski/tldextract
+
+[S7] joblib – Lightweight pipelining in Python.
+     URL: https://joblib.readthedocs.io/
+
+[S8] PyYAML – YAML parser and emitter for Python.
+     URL: https://pyyaml.org/
+
+[S9] pytest – Testing framework.
+     URL: https://docs.pytest.org/
+
+[S10] Kaggle API – Official CLI for downloading Kaggle datasets.
+      URL: https://github.com/Kaggle/kaggle-api
+
+----------------------------------------------------------------
+4. ONLINE RESOURCES CONSULTED
+----------------------------------------------------------------
+[W1] scikit-learn – RandomForestClassifier documentation.
+     https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+
+[W2] scikit-learn – Pipeline and StandardScaler.
+     https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html
+
+[W3] scikit-learn – Model evaluation metrics.
+     https://scikit-learn.org/stable/modules/model_evaluation.html
+
+[W4] Python docs – urllib.parse.
+     https://docs.python.org/3/library/urllib.parse.html
+
+[W5] PhishTank – community database of phishing URLs (background
+     reading on phishing tradecraft).  https://phishtank.org/
+
+[W6] APWG (Anti-Phishing Working Group) – quarterly phishing
+     activity reports.  https://apwg.org/
+
+----------------------------------------------------------------
+5. PROJECT BRIEF
+----------------------------------------------------------------
+[B1] "30 Cybersecurity Projects Using Machine Learning – Complete
+     Guide with Datasets & Evaluation Rubric."
+     (Course document – attached as Listoncyber.pdf.)
+     Project #11: Phishing URL Detection.
+================================================================

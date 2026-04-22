@@ -1,0 +1,33 @@
+{
+  "train": {
+    "split": "train",
+    "n_samples": 6707,
+    "accuracy": 0.9424481884598181,
+    "precision": 0.9352451433857539,
+    "recall": 0.9451542536615768,
+    "f1": 0.9401735895846249,
+    "roc_auc": 0.9841659954020826
+  },
+  "val": {
+    "split": "val",
+    "n_samples": 1437,
+    "accuracy": 0.9436325678496869,
+    "precision": 0.937950937950938,
+    "recall": 0.9447674418604651,
+    "f1": 0.941346850108617,
+    "roc_auc": 0.9848693606979849
+  },
+  "test": {
+    "split": "test",
+    "n_samples": 1437,
+    "accuracy": 0.9512874043145442,
+    "precision": 0.9504373177842566,
+    "recall": 0.9476744186046512,
+    "f1": 0.9490538573508006,
+    "roc_auc": 0.9879082963330953
+  },
+  "training_time_seconds": 0.247,
+  "model_type": "NumpyLogisticRegression (demo)",
+  "cv_f1_mean": 0.94114854660385,
+  "cv_f1_std": 0.003195968898801049
+}
